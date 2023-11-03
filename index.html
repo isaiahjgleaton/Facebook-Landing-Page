@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<style>
+    *, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.3rem;
+}
+
+img {
+    width: 13%;
+    max-width: 100%;
+    background-color: #1e45c7;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-top: 0;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase; 
+    color: white;
+    font-weight: 500;
+    background-color:#1e45c7;
+    padding: .75em 2em;
+    border-radius: 8px;
+    border-color: white
+}
+
+.btn:hover,
+.btn:focus {
+    opacity: .75; 
+    cursor: pointer;
+}
+
+.account-btn{
+    background-color: #0b1e5e;
+}
+.flex{
+    display: flex;
+}
+.flex_1{
+    display: flex;
+}
+.flex-col{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.sub-flex-col{
+    justify-content: space-around;
+    padding: 0 1rem;
+}
+.sub-flex-col p{
+    font-size: 0.8rem;
+}
+.sub-flex-col h6 {
+    color: #33353d;
+    margin-bottom: 0;
+}
+
+.container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    
+}
+.underline{
+    text-decoration: underline;
+}
+main{
+    background-color:#1e45c7;
+    color: white;
+}
+section p{
+    color: #7b829c;
+    font-size: 1rem;
+}
+
+.facebook-logo{
+    width: 25%;
+}
+
+.top-bar{
+    color: white;
+}
+
+.login{
+    align-content: flex-end;
+    margin-top: 1rem;
+}
+.secondary{
+    text-align: center;
+    width: 60%;
+}
+.input{
+    width: 62%;
+    max-width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}
+.input p{
+    font-size: 0.8rem;
+}
+
+@media(max-width: 1000px){
+    .flex{
+        display: block;
+        flex-direction: column-reverse;
+        margin: 0 auto;
+    }
+    .flex_1{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .top-bar, .login{
+        margin: 0 auto;
+        width: 30%;
+        text-align: center;
+        
+    }
+    .top-bar{
+        padding-top: 3.5rem;
+
+    }
+    .top-bar img{
+        min-width: 65%;
+    }
+    .top-bar h2{
+        visibility: hidden;
+        margin: 0rem 0rem;
+    }
+    .img{
+
+        margin-bottom: 0rem;
+    }
+
+}
+</style>
+<body>
+    <main class="main-content">
+        <div class="container flex" style="justify-content: space-between;">
+            <div class="top-bar flex_1">
+                <div class="img">
+                    <img src="img/facebook-logo.png" alt="facebook logo">
+                </div>
+                <h2>Facebook</h2>
+            </div>
+            <div class="login" style="margin-top: 1.6rem;">
+                <button class="btn">Login</button>
+            </div>
+        </div>
+        <div class="container secondary">
+                <h2>Sign up for your free Facebook account</h2>
+                <p>Use Facebook and all of its features</p>
+            <div class="container flex-col" style="align-items: center; margin: 0 auto;">
+                <div class="input flex">
+                    <input type="text" placeholder="First name" style="padding: 0.8rem">
+                    <input type="text" placeholder="Last name" style="padding: 0.8rem">
+                </div>
+                <div class="input flex">
+                    <input type="text" placeholder="Your email" style="padding: 0.8rem">
+                    <input type="password" placeholder="Set password" style="padding: 0.8rem">
+                </div>
+                <div class="input">
+                    <label for="">How did you hear about us?</label>
+                    <select type="" style="width: 100%; padding: 0.8rem; margin: 1rem 0;">
+                        <option value="">Twitter</option>
+                    </select>
+                    <button class="btn account-btn" style="width: 100%;">Create account</button>
+                    <p>By clicking this button, you agree to our <span class="underline">Terms of Service.</span></p>
+                </div>
+             </div>
+        </div>
+    </main>
+    <section class="sub-content">
+        <div class="container" >
+            <div class="container flex">
+                <div class=" sub-flex-col">
+                    <div class="sub-flex-col">
+                        <h6>Is there a catch?</h6>
+                        <p>Nope, no funny business.
+                        All it takes to start your account
+                        is your email address and a few other
+                        pieces of information. We don't even ask for your credit card.</p>
+                    </div>
+                    <div class="sub-flex-col">
+                        <h6>Are there any limits?</h6>
+                        <p>The free plan has room for five videos and comes with 200 GB
+                            of bandwidth per month. After you've uploaded 5 videos, you
+                            can upgrade to a paid plan for more space.</p>
+                    </div>
+                </div>
+                <div class="sub-flex-col">
+                    <h6>Do I have to worry about you selling my email or data?</h6>
+                    <p>No. Your contact information and private data are yours and yours alone.
+                        They're safe with us. We'll email you about product and company updates,
+                        but you can opt out any time. Learn more about our <span class="underline">Privacy Policy.</span></p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
